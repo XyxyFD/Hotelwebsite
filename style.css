@@ -8,14 +8,14 @@
 
 body {
     background-color: #f4f4f4; /*Hintergrundfarbe*/
-    color: #333; /*Farbe der Schrift*/
+    color: #1f1e1e; /*Farbe der Schrift*/
     font-size: 16px; /*Schriftgröße*/
     line-height: 1.6; /*Zeilenabstand des Textes*/
 }
 
 /* Header-Stil */
 header {
-    background-color: #fc7655;
+    background-color: #864109;
     color: white;
     padding: 20px 0;
     text-align: center; /*Zentriert den Text im Header horizontal*/
@@ -37,7 +37,7 @@ section {
 }
 
 section h2 {
-    color: #ff7e5f;
+    color: #864109;
     margin-bottom: 15px; /*Fügt unter der Überschrift einen Abstand*/
     font-size: 28px;
 }
@@ -71,13 +71,13 @@ form input,
 form select {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc; /*Setzt einen 1px breiten, grauen Rand um die Felder*/
+    border: 1px solid #2d9b5f; /*Setzt einen 1px breiten, grauen Rand um die Felder*/
     border-radius: 4px;
     font-size: 16px;
 }
 
 form button {
-    background-color: #ff7e5f;
+    background-color: #864109;
     color: white;
     padding: 15px;
     border: none;
@@ -88,12 +88,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #feb47b; /*Ändert die Hintergrundfarbe des Buttons beim Hovern auf einen helleren Orangeton*/
+    background-color: #df9348; /*Ändert die Hintergrundfarbe des Buttons beim Hovern auf einen helleren Orangeton*/
 }
 
 /* Footer-Stil */
 footer {
-    background-color: #333;
+    background-color: #864109;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -105,14 +105,15 @@ footer p {
 }
 
 footer a {
-    color: #ff7e5f;
+    color: #1a0e0e;
     text-decoration: none; /*Entfernt die Unterstreichung der Links*/
     margin: 0 10px;
     transition: color 0.3s ease; /*nimiert die Farbänderung der Links sanft über 0.3 Sekunden*/
+    
 }
 
 footer a:hover {
-    color: #feb47b; /*Hover Effekt für den Footer*/
+    color: #a699ee; /*Hover Effekt für den Footer*/
 }
 
 /* Button Animation */
@@ -126,9 +127,10 @@ button:hover, a:hover {
 
 /* Bildstil */
 section img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 8px; /*Die Ecken des Bildes leicht abrunden*/
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Responsives Layout */
