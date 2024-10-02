@@ -1,63 +1,63 @@
-/* Allgemeine Stile für die ganze Seite */
+/* Allgemeiner Stil für die ganze Seite mit "*" */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /*margin -> Außenabstand aller Elemente*/
+    padding: 0; /*padding -> Innenabstand aller Elemente*/
+    box-sizing: border-box; /*Bezieht das Padding und die Ränder in die Breiten-/Höhenberechnung*/
+    font-family: 'Roboto', sans-serif; /*font-family -> Standardschriftart*/
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+    background-color: #f4f4f4; /*Hintergrundfarbe*/
+    color: #333; /*Farbe der Schrift*/
+    font-size: 16px; /*Schriftgröße*/
+    line-height: 1.6; /*Zeilenabstand des Textes*/
 }
 
-/* Header-Stile */
+/* Header-Stil */
 header {
-    background-color: #ff7e5f;
+    background-color: #fc7655;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    text-align: center; /*Zentriert den Text im Header horizontal*/
 }
 
 header h1 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 36px; /*Schriftgröße der Überschrift*/
+    font-weight: 700; /*Macht den Text fett*/
 }
 
 /* Hauptbereich (section) */
 section {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1200px; /*Maximale Breite des Bereichs*/
+    margin: 20px auto; /*Abstand von 20 px und zentriert den Bereich horizontal*/
     padding: 20px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /*Fügt dem Bereich abgerundete Ecken mit einem Radius von 8px zu*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Schatteneffekt mit 4px nach unten und 8px leichter Unschärfe*/
 }
 
 section h2 {
     color: #ff7e5f;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /*Fügt unter der Überschrift einen Abstand*/
     font-size: 28px;
 }
 
 section p {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /*Unter jedem Absatz 15px Abstand*/
 }
 
 section ul {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /*Abstand für jeder ungeordneten Liste*/
 }
 
 section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*Abstand für jedes Listenelement*/
 }
 
-/* Formular-Stile */
+/* Formular-Stil */
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*Macht das Formular zu einem flexiblen Container*/
+    flex-direction: column; /*Ordnet die Kinderelemente des Formulars vertikal*/
     max-width: 600px;
     margin: 20px auto;
 }
@@ -71,7 +71,7 @@ form input,
 form select {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /*Setzt einen 1px breiten, grauen Rand um die Felder*/
     border-radius: 4px;
     font-size: 16px;
 }
@@ -83,15 +83,15 @@ form button {
     border: none;
     border-radius: 5px;
     font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor: pointer; /* Ändert den Mauszeiger in eine Hand, wenn er über den Button schwebt*/
+    transition: background-color 0.3s ease; /*Animiert den Hintergrundfarbwechsel des Buttons sanft über 0.3 Sekunden*/
 }
 
 form button:hover {
-    background-color: #feb47b;
+    background-color: #feb47b; /*Ändert die Hintergrundfarbe des Buttons beim Hovern auf einen helleren Orangeton*/
 }
 
-/* Footer-Stile */
+/* Footer-Stil */
 footer {
     background-color: #333;
     color: white;
@@ -106,39 +106,39 @@ footer p {
 
 footer a {
     color: #ff7e5f;
-    text-decoration: none;
+    text-decoration: none; /*Entfernt die Unterstreichung der Links*/
     margin: 0 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /*nimiert die Farbänderung der Links sanft über 0.3 Sekunden*/
 }
 
 footer a:hover {
-    color: #feb47b;
+    color: #feb47b; /*Hover Effekt für den Footer*/
 }
 
 /* Button Animation */
 button, a {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /*Animiert alle Änderungen an Buttons und Links sanft über 0.3 Sekunden*/
 }
 
 button:hover, a:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*Vergrößert Buttons und Links beim Hovern auf 105 % ihrer normalen Größe*/
 }
 
 /* Bildstil */
 section img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 8px; /*Die Ecken des Bildes leicht abrunden*/
     margin-top: 20px;
 }
 
 /* Responsives Layout */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*Setzt Stile für Bildschirme, die eine Breite von maximal 768px haben */
     section {
         padding: 10px;
     }
 
     form {
-        max-width: 100%;
+        max-width: 100%; /*Macht das Formular so breit wie sein Container*/
     }
 
     header h1 {
