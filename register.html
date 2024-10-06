@@ -8,45 +8,69 @@
 </head>
 <body>
     <header>
-        <h1>Registrierung</h1>
+        <h1>Registration</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="startseite.html">
+                        <img src="images/Home-Button-Icon.jpg" alt="arial picture of the home button logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="impressum.html"><img src="images/Telefon Icon.png" alt="Telefon Icon"></a>
+                </li>
+                <li>
+                    <a href="impressum.html"><img src="images/Email Icon.png" alt="E-Mail Icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="images/Instagram Icon.webp" alt="Instagram Icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/"><img src="images/Facebook Icon.svg" alt="Facebook Icon"></a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+            </ul>    
+        </nav>
     </header>
 
-    <section>
-        <form action="/submit_registration" method="post">
-            <label for="salutation">Salutation:</label>
-            <select id="salutation" name="salutation">
-                <option value="man">Man</option>
-                <option value="woman">Woman</option>
-            </select>
-            
+    <main>
+        <div class="section-wrapper-register">
+            <section>
+                <form action="/submit_registration" method="post">
+                    <label for="salutation">Salutation:</label>
+                    <select id="salutation" name="salutation">
+                        <option value="man">Man</option>
+                        <option value="woman">Woman</option>
+                    </select>
 
-            <label for="first_name">First name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-            
+                    <label for="first_name">First name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
 
-            <label for="last_name">Last name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-            
+                    <label for="last_name">Last name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
 
-            <label for="email">E-Mail-Adress:</label>
-            <input type="email" id="email" name="email" required>
-            
+                    <label for="email">E-Mail-Adress:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
 
-            <label for="confirm_password">Confirm password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
-            
+                    <label for="confirm_password">Confirm password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
 
-            <button type="submit">Register</button>
-        </form>
-    </section>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 GD Hotel GmbH</p>

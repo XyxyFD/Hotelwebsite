@@ -3,56 +3,127 @@
     margin: 0; /*margin -> Außenabstand aller Elemente*/
     padding: 0; /*padding -> Innenabstand aller Elemente*/
     box-sizing: border-box; /*Bezieht das Padding und die Ränder in die Breiten-/Höhenberechnung*/
-    font-family: 'Roboto', sans-serif; /*font-family -> Standardschriftart*/
+    font-family: Arial, Helvetica, sans-serif; /*font-family -> Standardschriftart*/
 }
 
+/* Grundlegende Stile für den Body */
 body {
-    background-color: #f4f4f4; /*Hintergrundfarbe*/
-    color: #1f1e1e; /*Farbe der Schrift*/
-    font-size: 16px; /*Schriftgröße*/
-    line-height: 1.6; /*Zeilenabstand des Textes*/
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header-Stil */
 header {
-    background-color: #864109;
-    color: white;
-    padding: 20px 0;
-    text-align: center; /*Zentriert den Text im Header horizontal*/
+    background: #012c5a; /* Dunkelblau */
+    padding: 20px 0; /* Innenabstand */
+    text-align: center; /* Zentriert den Inhalt im Header */
 }
 
 header h1 {
-    font-size: 36px; /*Schriftgröße der Überschrift*/
-    font-weight: 700; /*Macht den Text fett*/
+    color: white; /* Weiße Schriftfarbe für die Überschrift */
+    font-size: 2.5em; /* Größere Schriftgröße */
+    margin-bottom: 10px; /* Abstand nach unten */
 }
 
-/* Hauptbereich (section) */
-section {
-    max-width: 1200px; /*Maximale Breite des Bereichs*/
-    margin: 20px auto; /*Abstand von 20 px und zentriert den Bereich horizontal*/
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px; /*Fügt dem Bereich abgerundete Ecken mit einem Radius von 8px zu*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Schatteneffekt mit 4px nach unten und 8px leichter Unschärfe*/
+/* Stile für das Navigationsmenü */
+nav {
+    background: #012c5a; /* Dunkelblau */
+    padding: 10px 0;
+
 }
 
-section h2 {
-    color: #864109;
-    margin-bottom: 15px; /*Fügt unter der Überschrift einen Abstand*/
-    font-size: 28px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Zentriert die Navigation */
 }
 
-section p {
-    margin-bottom: 15px; /*Unter jedem Absatz 15px Abstand*/
+nav ul li {
+    display: inline; /* Horizontale Anordnung */
+    margin: 0 35px; /* Abstand zwischen den Links */
 }
 
-section ul {
-    margin-bottom: 20px; /*Abstand für jeder ungeordneten Liste*/
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Weiße Schriftfarbe für Links */
+    font-size: 25px; /* Größere Schriftgröße */
+    
 }
 
-section ul li {
-    margin-bottom: 10px; /*Abstand für jedes Listenelement*/
+nav ul li a:hover {
+    color: #f1f1f1; /* Hellere Schriftfarbe beim Hover */
+    transition: color 0.8s ease; /* Sanfter Farbwechsel beim Hover */
 }
+
+nav ul li a img {
+    max-width: 50px; /* Maximale Breite des Logos */
+    height: auto; /* Automatische Höhe */
+    margin: 0 auto; /* Zentriert das Bild */
+}
+
+/* Stile für die Sektionen */
+.section-wrapper-imprint,
+.section-wrapper-help,
+.section-wrapper-home,
+.section-wrapper-login,
+.section-wrapper-register {
+    max-width: 900px; /* Maximale Breite der Sektionen */
+    margin: 20px auto; /* Zentriert die Sektionen */
+    padding: 20px; /* Innenabstand */
+    background: #fff; /* Weißer Hintergrund */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für den 3D-Effekt */
+}
+
+/* Überschrift in den Sektionen */
+.section-wrapper-imprint h2,
+.section-wrapper-help h2,
+.section-wrapper-home h2,
+.section-wrapper-login h2,
+.section-wrapper-register h2 {
+    color: #02448a; /* Dunkelblaue Schrift für die Überschrift */
+    margin-bottom: 5px; /* Abstand nach unten */
+}
+
+/* Stil für Absätze in den Sektionen */
+.section-wrapper-imprint p,
+.section-wrapper-help p,
+.section-wrapper-home p,
+.section-wrapper-login p,
+.section-wrapper-register p {
+    line-height: 2; /* Zeilenhöhe für besseren Lesefluss */
+    margin-bottom: 5px;
+}
+
+/* Links innerhalb der Sektionen */
+.section-wrapper-imprint a,
+.section-wrapper-help a,
+.section-wrapper-home a,
+.section-wrapper-login a,
+.section-wrapper-register a {
+    color: #007bff; /* Dunkelblau für Links */
+    text-decoration: none; /* Unterstreichung entfernen */
+}
+
+.section-wrapper-imprint a:hover,
+.section-wrapper-help a:hover,
+.section-wrapper-home a:hover,
+.section-wrapper-login a:hover,
+.section-wrapper-register a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+/* Responsive Design für mobile Endgeräte */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Vertikale Anordnung bei kleinen Bildschirmen */
+        margin: 10px 0; /* Abstand zwischen den Links */
+    }
+}
+
 
 /* Formular-Stil */
 form {
@@ -71,13 +142,13 @@ form input,
 form select {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #2d9b5f; /*Setzt einen 1px breiten, grauen Rand um die Felder*/
+    border: 1px solid #144172; /*Setzt einen 1px breiten, grauen Rand um die Felder*/
     border-radius: 4px;
     font-size: 16px;
 }
 
 form button {
-    background-color: #864109;
+    background-color: #144172;
     color: white;
     padding: 15px;
     border: none;
@@ -88,12 +159,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #df9348; /*Ändert die Hintergrundfarbe des Buttons beim Hovern auf einen helleren Orangeton*/
+    background-color: #2d89ec; /*Ändert die Hintergrundfarbe des Buttons beim Hovern auf einen helleren Orangeton*/
 }
 
 /* Footer-Stil */
 footer {
-    background-color: #864109;
+    background-color: #144172;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -109,11 +180,12 @@ footer a {
     text-decoration: none; /*Entfernt die Unterstreichung der Links*/
     margin: 0 10px;
     transition: color 0.3s ease; /*nimiert die Farbänderung der Links sanft über 0.3 Sekunden*/
+    font-weight: bold;
     
 }
 
 footer a:hover {
-    color: #a699ee; /*Hover Effekt für den Footer*/
+    color: #f1f1f1; /*Hover Effekt für den Footer*/
 }
 
 /* Button Animation */
@@ -151,3 +223,5 @@ section img {
         font-size: 24px;
     }
 }
+
+
