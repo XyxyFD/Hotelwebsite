@@ -14,6 +14,10 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url(images/GD-Hotel_lobby.webp);
+    backdrop-filter: blur(15px);
+    background-size: cover;
+    position: relative;
 }
 
 header {
@@ -168,7 +172,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 320px;
 }
 
 footer p {
